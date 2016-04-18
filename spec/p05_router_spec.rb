@@ -136,18 +136,18 @@ end
 
 describe 'ControllerBase#initialize' do
   before(:all) do
-    class CatsController < ControllerBase
+    class CharactersController < ControllerBase
       def index
-        @cats = ["Gizmo"]
+        @characters = ["Mufasa"]
       end
     end
   end
 
-  after(:all) { Object.send(:remove_const, "CatsController") }
+  after(:all) { Object.send(:remove_const, "CharactersController") }
 
   let(:req) { Rack::Request.new({'rack.input' => {}}) }
   let(:res) { Rack::MockResponse.new('200', {}, []) }
-  let(:cats_controller) { CatsController.new(req, res, { 'key' => 'val' } ) }
+  let(:cats_controller) { CharactersController.new(req, res, { 'key' => 'val' } ) }
 
   context '#initialize' do
     it "includes route params in the params object" do
@@ -155,5 +155,3 @@ describe 'ControllerBase#initialize' do
     end
   end
 end
-
-

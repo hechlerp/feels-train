@@ -56,7 +56,7 @@ describe "the symphony of things" do
       expect(res.headers['Set-Cookie']).to_not be_empty
       cookie_str = res.headers['Set-Cookie']
       cookie_val = Rack::Utils.parse_query(cookie_str)
-      cookie_str = cookie_val['_rails_lite_app']
+      cookie_str = cookie_val['_feels_train_app']
       cookie_hash = JSON.parse(cookie_str)
       expect(cookie_hash["token"]).to eq("testing")
     end
