@@ -37,6 +37,3 @@ DEPENDENCIES
   byebug
   rack
   rspec (~> 3.1.0)
-
-BUNDLED WITH
-   1.11.2
