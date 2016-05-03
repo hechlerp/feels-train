@@ -1,6 +1,6 @@
 [Demo][heroku]
 
-[heroku]: feels-train.herokuapp.com/characters
+[heroku]: http://feels-train.herokuapp.com/characters
 
 #FeelsTrain
 
