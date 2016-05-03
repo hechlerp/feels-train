@@ -51,7 +51,6 @@ class Characters2Controller < ControllerBase
   end
 
   def new
-    @character = {name: "Write name here"}
     render :new
   end
 
