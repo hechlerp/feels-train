@@ -1,0 +1,16 @@
+<h1>Quotes</h1>
+<ul>
+  <% if @statuses.empty? %>
+    <%= "[empty]" %>
+  <% else %>
+    <% @statuses.each do |status| %>
+      <li>
+
+        <%= status[:quote].gsub(/\n/,'<br>') %>
+      </li>
+      <br>
+    <% end %>
+  <% end %>
+</ul>
+<br>
+<a href="/characters"> << Return to character index</a>

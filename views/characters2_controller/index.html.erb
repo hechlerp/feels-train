@@ -1,0 +1,10 @@
+<h1>Full Character List</h1>
+<ul>
+  <% @characters.each do |character| %>
+    <li>
+      <a href="/characters/<%= character[:id] %>/statuses"><%= character[:name] %> </a>
+    </li>
+    <br>
+  <% end %>
+</ul>
+<a href="/characters/new">New Character</a>

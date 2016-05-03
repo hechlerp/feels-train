@@ -61,7 +61,7 @@ class Router
     if route
       route.run(req, res)
     else
-      res.body = "We ain't found shit"
+      res.body = ["We ain't found shit"]
       res.status = 404
     end
   end

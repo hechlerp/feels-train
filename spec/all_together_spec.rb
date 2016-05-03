@@ -51,8 +51,6 @@ describe "the symphony of things" do
 
     it "saves the session after rendering content" do
       ctrlr.update_session
-      # Currently broken when flash is used. Need to store flash in the cookie
-      # or change this spec.
       expect(res.headers['Set-Cookie']).to_not be_empty
       cookie_str = res.headers['Set-Cookie']
       cookie_val = Rack::Utils.parse_query(cookie_str)
