@@ -83,7 +83,3 @@ rackapp = Rack::Builder.new do
 end
 
 run rackapp
-
-# Rack::Server.start(
-# app: app,
-# )
