@@ -4,7 +4,7 @@
 
 #FeelsTrain
 
-FeelsTrain is a lightweight MVC architecture, built using Ruby. It allows a user to run a server on localhost with Rack
+FeelsTrain is a lightweight MVC architecture, built using Ruby. It allows a user to run a server with Rack
 middleware and create routes for CRUD functionality.
 
 ###Technical Details
